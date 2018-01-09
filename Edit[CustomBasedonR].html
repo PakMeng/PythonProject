@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .title {  width:700px;
+        height: 100px;
+        border:10px #fff5ee;
+        color: blue;
+        font-size:250%;
+        margin:auto;
+        text-align: center;
+        border-style: outset;
+        font-style:Serif;
+        font-variant: small-caps;
+    }
+
+
+          tr:nth-child(even){background-color: #f2f2f2}
+
+        th {
+            border: 1px solid #ddd;
+            font-size:120%;
+            background:#80ced6;
+            color:#FFFAF0;
+            font-style:serif;
+            font-variant: small-caps;
+           }
+
+        table {
+            margin-top:80px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            font-size:110%;
+            text-align:center;
+            color:blue;
+        }
+
+        .redbox {
+        border:1px solid red;
+        color:Red;
+        width:8%;
+        text-align:center;
+        }
+
+        p {
+          font-variant: small-caps;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+<div class="title">Changes After sending the Accepting</div>
+
+    <table>
+        <tr>
+            <th>Item Description</th>
+            <th>Method Used For Payment</th>
+            <th>Total Amount For the Item [$]</th>
+            <th>Total Amount you Selected to  Pay [$]</th>
+            <th>Cap Amount[$]</th>
+            <th>Duration</th>
+            <th>Would like other people to view your amount[Y/N]</th>
+        </tr>
+
+        <tr>
+            <td>Monster Curry</td>
+            <td>Custom Based on the Receipents</td>
+            <td>200</td>
+            <td>40</td>
+            <td>50</td>
+            <td>7</td>
+            <td>Y</td>
+        </tr>
+    <table>
+
+
+        <form action="/action_page.php">
+        <fieldset>
+        <legend>Fill in the Details</legend>
+        <p>Item Description : Monster Curry</p>
+        <p>Total Amount of the Item : $200</p>
+        <p>Duration : 7 days</p>
+        <p>Enter the Amount [$]  <input type="text name="> <div class="redbox">CAP AT [$50]</div></p>
+        <p>Would like other people to view your amount[Y/N]<br>
+        [Y]<input type="checkbox">
+        [N]<input type="checkbox">
+        </p>
+
+        <button type="button">Confirm</button>
+        </fieldset>
+        </form>
+</body>
+</html>
